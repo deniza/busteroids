@@ -1,0 +1,29 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Busteroids</title>
+    <script type="text/javascript" src="lib/phaser-arcade-physics.min.js"></script>
+    <script type="text/javascript" src="lib/box2d-plugin-full.min.js"></script>
+    <script type="text/javascript" src="sound.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: rgb(80,80,80);
+        }
+    </style>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+    var game = new Phaser.Game(800, 600, Phaser.CANVAS);    
+    
+    game.state.add("GameState", GameState);    
+    game.state.start("GameState");
+
+</script>
+
+</body>
+</html>
